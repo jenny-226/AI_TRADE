@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="마법학교 테마로 배우는 국제무역사 학습 플랫폼" />
+  <title>TRADE PASS | Hogwarts Trade Academy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23d7b56d' d='M32 4 8 14v17c0 14 9 24 24 29 15-5 24-15 24-29V14z'/%3E%3Cpath fill='%2310192d' d='M18 19h28v7H35v23h-7V26H18z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="atmosphere.css" />
+  <link rel="stylesheet" href="arrival.css" />
+  <link rel="stylesheet" href="common-room.css" />
+</head>
+<body data-house="gryffindor">
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <header class="topbar">
+    <button class="brand" data-route="home" aria-label="TRADE PASS 공용 휴게실"><span class="crest">TP</span><span>TRADE PASS <small>HOGWARTS ACADEMY</small></span></button>
+    <nav id="mainNav" class="main-nav" aria-label="주요 메뉴"></nav>
+    <button id="languageToggle" class="language-toggle" aria-label="언어 전환">한국어 <span>/</span> English</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <template id="landingTemplate">
+    <section class="landing page-enter">
+      <div class="landing-copy">
+        <p class="eyebrow">INTERNATIONAL TRADE ACADEMY</p>
+        <h1>무역의 문을 여는<br><em>당신만의 여정</em></h1>
+        <p class="lead">마법학교의 학생이 되어 국제무역의 핵심을 익히고, 이야기 속 임무를 해결하며 실력을 증명하세요.</p>
+        <button class="primary-btn large" data-action="start">입학 허가서 열기</button>
+        <div class="landing-stats"><span><b>4</b> 기숙사</span><span><b>4</b> 핵심 과목</span><span><b>12</b> 학습 챕터</span></div>
+      </div>
+      <div class="portal" aria-hidden="true"><div class="portal-ring ring-one"></div><div class="portal-ring ring-two"></div><div class="portal-core"><span>貿易</span><small>TRADE</small></div></div>
+    </section>
+  </template>
+
+  <script src="arrival.js"></script>
+  <script src="common-room.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
